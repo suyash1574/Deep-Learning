@@ -1,12 +1,11 @@
 pandas
 numpy
-matplotlib
-seaborn
 dvc
 keras
-tensorflow
 scikit-learn
+matplotlib
+seaborn
+tensorflow
 joblib
-PyYAML
+PyYaml
 streamlit
-
