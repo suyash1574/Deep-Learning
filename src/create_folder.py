@@ -13,7 +13,7 @@ def create_fold(config, image=None):
     cla = config['load_data']['num_classes']
     #print(dirr)
     #print(cla)
-    if os.path.exists(dirr+'/'+'train'+'class_0') and os.path.exists(dirr+'/'+'test'+'class_0'):
+    if os.path.exists(dirr+'/'+'train'+'/'+'class_0') and os.path.exists(dirr+'/'+'test'+'/'+'class_0'):
         print('Train and Test Folder already exists....!')
         print("I am skipping it....!")
     else:
@@ -31,4 +31,5 @@ if __name__=='__main__':
     args.add_argument('--config',default='params.yaml')
     passed_args=args.parse_args()
     create_fold(config=passed_args.config)
+
 
